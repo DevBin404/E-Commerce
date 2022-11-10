@@ -1,4 +1,3 @@
-from email.mime import image
 from django.db import models
 
 class Category(models.Model):
@@ -20,6 +19,6 @@ class Product(models.Model):
         return self.name
 
 class Image(models.Model):
-    image = models.ImageField(upload_to='product/% Y/% m/% d/')
+    image = models.ImageField(upload_to='Products')
     product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True)
-
+    
