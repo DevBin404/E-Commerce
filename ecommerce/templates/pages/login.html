@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="../css/style.css"/>
+    <title>Shop Pages || design using HTML || CSS || Javascript</title>
+    <style>
+      .header{
+        min-height: 0;
+      }
+      .nav-center .nav-link a {
+        color: #222;
+      }
+      .navigation .nav-center .logo{
+        color: #222;
+      }
+      .cross-icon {
+        color: #222;
+      }
+      .icon a {
+        color: #222;
+      }
+      .icon {
+        color: #222;
+      }
+      .hamburger {
+        color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header class="header" id="header">
+      <!-- top nav  -->
+      <div class="top-nav">
+        <div class="container d-flex">
+          <p>Help or Customer support call us (001) 2321 6321</p>
+          <ul class="d-flex">
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Faq</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Navigation  -->
+      <div class="navigation">
+        <div class="nav-center container d-flex">
+          <a href="../index.html" class="logo"><h2>E-COM</h2></a>
+          <ul class="nav-link d-flex">
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item"><a href="./collection.html">Collections</a></li>            
+            <li class="nav-item"><a href="./shop.html">Shop</a></li>
+            <li class="nav-item"><a href="./about.html">Our Brand</a></li>
+            <li class="nav-item"><a href="./contact.html">Pages</a></li>
+
+            <!-- Mobile icons  -->
+
+            <div class="cross-icon">
+              <i class='bx bx-x'></i>
+            </div>
+            <li class="icons d-flex">
+              <a href="./login.html" class="icon"><i class="bx bx-user"></i></a>
+              <div class="icon">
+                  <a href="javascript:void(0)"><i class="bx bx-search"></i></a>
+                </div>
+                <div class="icon">
+                  <a href="./wishlist.html"><i class="bx bx-heart"></i></a>
+                  <span class="d-flex">0</span>
+                </div>
+                <div class="icon">
+                  <a href="./cart.html"><i class="bx bx-cart"></i></a>
+                  <span class="d-flex">0</span>
+                </div>
+            </li>
+          </ul>
+
+          <!-- Right side icons for desktop  -->
+          <div class="icons d-flex">
+            <div class="hide-nav d-flex">
+              <a href="./pages/login.html" class="icon"><i class="bx bx-user"></i></a>
+              <div class="icon">
+                  <a href="javascript:void(0)"><i class="bx bx-search"></i></a>
+                </div>
+                <div class="icon">
+                  <a href="./pages/wishlist.html"><i class="bx bx-heart"></i></a>
+                  <span class="d-flex">0</span>
+                </div>
+                <div class="icon">
+                  <a href="./pages/cart.html"><i class="bx bx-cart"></i></a>
+                  <span class="d-flex">0</span>
+                </div>
+            </div>
+              <!-- Humbarger -->
+
+              <div class="hamburger">
+                <!-- <i class="bx bx-menu-alt-left"></i> -->
+                <i class='bx bx-menu'></i>
+              </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="contact container">
+      <div class="contact-area">
+        <h1>Login</h1>
+        <p>Already have an account? Login or <a href="./signup.html">Sign Up</a></p>
+        <form action="#" method="POST">
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+          </div>
+          <div class="input-container">
+            <label for="password">Password</label>
+            <input type="password" name="Password" id="password" placeholder="Enter Password">
+          </div>
+          <div class="select-container">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">Remember me</label>
+          </div>
+          <div class="terms-container">
+            <p>Did you forgot your password? <a href="">Reset Password</a></p>
+          </div>
+          <div class="btn-container">
+            <input type="reset" id="calcel" value="Cancel">
+             <input type="submit" id="submit" value="Login">
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="../js/index.js"></script>
+</html>

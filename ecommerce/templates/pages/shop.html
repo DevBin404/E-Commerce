@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="../css/style.css"/>
+    <title>Shop Pages || design using HTML || CSS || Javascript</title>
+    <style>
+      .header{
+        min-height: 0;
+      }
+      .nav-center .nav-link a {
+        color: #222;
+      }
+      .navigation .nav-center .logo{
+        color: #222;
+      }
+      .cross-icon {
+        color: #222;
+      }
+      .icon a {
+        color: #222;
+      }
+      .icon {
+        color: #222;
+      }
+      .hamburger {
+        color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header class="header" id="header">
+      <!-- top nav  -->
+      <div class="top-nav">
+        <div class="container d-flex">
+          <p>Help or Customer support call us (001) 2321 6321</p>
+          <ul class="d-flex">
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Faq</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Navigation  -->
+      <div class="navigation">
+        <div class="nav-center container d-flex">
+          <a href="../index.html" class="logo"><h2>E-COM</h2></a>
+          <ul class="nav-link d-flex">
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item"><a href="./collection.html">Collections</a></li>            
+            <li class="nav-item"><a href="./shop.html">Shop</a></li>
+            <li class="nav-item"><a href="./about.html">Our Brand</a></li>
+            <li class="nav-item"><a href="./contact.html">Pages</a></li>
+
+            <!-- Mobile icons  -->
+
+            <div class="cross-icon">
+              <i class='bx bx-x'></i>
+            </div>
+            <li class="icons d-flex">
+              <a href="./pages/login.html" class="icon"><i class="bx bx-user"></i></a>
+              <div class="icon">
+                  <a href="javascript:void(0)"><i class="bx bx-search"></i></a>
+                </div>
+                <div class="icon">
+                  <a href="./pages/wishlist.html"><i class="bx bx-heart"></i></a>
+                  <span class="d-flex">0</span>
+                </div>
+                <div class="icon">
+                  <a href="./pages/cart.html"><i class="bx bx-cart"></i></a>
+                  <span class="d-flex">0</span>
+                </div>
+            </li>
+          </ul>
+
+          <!-- Right side icons for desktop  -->
+          <div class="icons d-flex">
+            <div class="hide-nav d-flex">
+              <a href="./pages/login.html" class="icon"><i class="bx bx-user"></i></a>
+              <div class="icon">
+                  <a href="javascript:void(0)"><i class="bx bx-search"></i></a>
+                </div>
+                <div class="icon">
+                  <a href="./pages/wishlist.html"><i class="bx bx-heart"></i></a>
+                  <span class="d-flex">0</span>
+                </div>
+                <div class="icon">
+                  <a href="./pages/cart.html"><i class="bx bx-cart"></i></a>
+                  <span class="d-flex">0</span>
+                </div>
+            </div>
+              <!-- Humbarger -->
+
+              <div class="hamburger">
+                <!-- <i class="bx bx-menu-alt-left"></i> -->
+                <i class='bx bx-menu'></i>
+              </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Top promotion seciton  -->
+
+    <section class="promo">
+      <div class="promo-text container">
+        <span>Up to <span class="color">70%</span> sales off</span>
+        <h1>Flash sales is going on</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Tenetur doloremque, <br> explicabo aperiam, quis quasi accusantium deleniti</p>
+      </div>
+    </section>
+
+    <!-- New arivals products section  -->
+    <section class="section new-arrival">
+      <div class="top-text">
+        <div class="left-text">
+          <h4>All Products</h4>
+        </div>
+        <div class="right-sort">
+          <select name="sort"id="sort">
+            <option value="sort by value">Sort by defualt</option>
+            <option value="sort by value">Sort by price</option>
+            <option value="sort by value" selected>Sort by rating</option>
+            <option value="sort by value">Sort by selling</option>
+            <option value="sort by value">Sort by popularity</option>
+          </select>
+
+          <div class="search-box">
+            <input type="search" id="" placeholder="Type your keyword here...">
+            <button type="submit">Search</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- products part -->
+
+      <div class="products-container">
+        <div class="product">
+          <div class="product-overlay">
+            <a href="./pages/product.html" class="product-thum">
+              <img src="../images/product-3.jpg" alt="">
+            </a>
+          </div>
+          <div class="product-info">
+            <span>Men's cloths</span>
+            <a href="./pages/product.html">
+              stylist t-shirt for men's
+            </a>
+            <h4>$29.99</h4>
+          </div>
+
+          <span class="discount">40%</span>
+
+            <!-- hover icons  -->
+          
+            <ul class="icons">
+              <li> <i class="bx bx-heart"></i></li>
+              <li> <i class="bx bx-search"></i></li>
+              <li> <i class="bx bx-cart"></i></li>
+            </ul>
+        </div>
+        <div class="product">
+          <div class="product-overlay">
+            <a href="./pages/product.html" class="product-thum">
+                <img src="../images/product-2.jpg" alt="">
+            </a>
+          </div>
+          <div class="product-info">
+            <span>Men's cloths</span>
+            <a href="./pages/product.html">
+              winter hodies for men's
+            </a>
+            <h4>$31.90</h4>
+          </div>
+          <span class="discount">30%</span>
+            <!-- hover icons  -->
+          
+            <ul class="icons">
+              <li> <i class="bx bx-heart"></i></li>
+              <li> <i class="bx bx-search"></i></li>
+              <li> <i class="bx bx-cart"></i></li>
+            </ul>
+        </div>
+        <div class="product">
+          <div class="product-overlay">
+            <a href="./pages/product.html" class="product-thum">
+                <img src="../images/product-4.jpg" alt="">
+            </a>
+          </div>
+          <div class="product-info">
+            <span>Women's cloths</span>
+            <a href="./pages/product.html">
+              warmfull hodies for womem's
+            </a>
+            <h4>$49.99</h4>
+          </div>
+
+          <!-- hover icons  -->
+
+          <ul class="icons">
+            <li> <i class="bx bx-heart"></i></li>
+            <li> <i class="bx bx-search"></i></li>
+            <li> <i class="bx bx-cart"></i></li>
+          </ul>
+        </div>
+        <div class="product">
+          <div class="product-overlay">
+            <a href="./pages/product.html" class="product-thum">
+                <img src="../images/product-1.jpg" alt="">
+            </a>
+          </div>
+          <div class="product-info">
+            <span>travel bag</span>
+            <a href="./pages/product.html">
+              tranding travels bag for travelers
+            </a>
+            <h4>$28.50</h4>
+          </div>
+          <span class="discount">20%</span>
+            <!-- hover icons  -->
+          
+            <ul class="icons">
+              <li> <i class="bx bx-heart"></i></li>
+              <li> <i class="bx bx-search"></i></li>
+              <li> <i class="bx bx-cart"></i></li>
+            </ul>
+        </div>
+        <div class="product">
+          <div class="product-overlay">
+            <a href="./pages/product.html" class="product-thum">
+                <img src="../images/product-6.jpg" alt="">
+            </a>
+          </div>
+          <div class="product-info">
+            <span>Men's cloths</span>
+            <a href="./pages/product.html">
+              custom name hodies for men's
+            </a>
+            <h4>$21.99</h4>
+          </div>
+          <span class="discount">15%</span>
+            <!-- hover icons  -->
+          
+            <ul class="icons">
+              <li> <i class="bx bx-heart"></i></li>
+              <li> <i class="bx bx-search"></i></li>
+              <li> <i class="bx bx-cart"></i></li>
+            </ul>
+        </div>
+        <div class="product">
+          <div class="product-overlay">
+            <a href="./pages/product.html" class="product-thum">
+                <img src="../images/product-8.jpg" alt="">
+            </a>
+          </div>
+          <div class="product-info">
+            <span>Men's cloths</span>
+            <a href="./pages/product.html">
+              crishmas t-shirt for both
+            </a>
+            <h4>$21.99</h4>
+          </div>
+          <span class="discount">34%</span>
+            <!-- hover icons  -->
+          
+            <ul class="icons">
+              <li> <i class="bx bx-heart"></i></li>
+              <li> <i class="bx bx-search"></i></li>
+              <li> <i class="bx bx-cart"></i></li>
+            </ul>
+        </div>
+        <div class="product">
+          <div class="product-overlay">
+            <a href="./pages/product.html" class="product-thum">
+                <img src="../images/product-3.jpg" alt="">
+            </a>
+          </div>
+          <div class="product-info">
+            <span>Men's cloths</span>
+            <a href="./pages/product.html">
+              t-shirt for men's
+            </a>
+            <h4>$21.99</h4>
+          </div>
+          <span class="discount">32%</span>
+            <!-- hover icons  -->
+          
+            <ul class="icons">
+              <li> <i class="bx bx-heart"></i></li>
+              <li> <i class="bx bx-search"></i></li>
+              <li> <i class="bx bx-cart"></i></li>
+            </ul>
+        </div>
+        <div class="product">
+          <div class="product-overlay">
+            <a href="./pages/product.html" class="product-thum">
+                <img src="../images/product-2.jpg" alt="">
+            </a>
+          </div>
+          <div class="product-info">
+            <span>Men's cloths</span>
+            <a href="./pages/product.html">
+              trandy bag for both
+            </a>
+            <h4>$21.99</h4>
+          </div>
+          <span class="discount">45%</span>
+            <!-- hover icons  -->
+          
+            <ul class="icons">
+              <li> <i class="bx bx-heart"></i></li>
+              <li> <i class="bx bx-search"></i></li>
+              <li> <i class="bx bx-cart"></i></li>
+            </ul>
+        </div>
+        <div class="product">
+          <div class="product-overlay">
+            <a href="./pages/product.html" class="product-thum">
+                <img src="../images/product-1.jpg" alt="">
+            </a>
+          </div>
+          <div class="product-info">
+            <span>Men's cloths</span>
+            <a href="./pages/product.html">
+              winter hodies for men's
+            </a>
+            <h4>$21.99</h4>
+          </div>
+          <span class="discount">35%</span>
+            <!-- hover icons  -->
+          
+            <ul class="icons">
+              <li> <i class="bx bx-heart"></i></li>
+              <li> <i class="bx bx-search"></i></li>
+              <li> <i class="bx bx-cart"></i></li>
+            </ul>
+        </div>
+        <div class="product">
+          <div class="product-overlay">
+            <a href="./pages/product.html" class="product-thum">
+                <img src="../images/product-5.jpg" alt="">
+            </a>
+          </div>
+          <div class="product-info">
+            <span>both cloths</span>
+            <a href="./pages/product.html">
+              beautifull t-shirts for both
+            </a>
+            <h4>$79.99</h4>
+          </div>
+          <span class="discount">50%</span>
+            <!-- hover icons  -->
+          
+            <ul class="icons">
+              <li> <i class="bx bx-heart"></i></li>
+              <li> <i class="bx bx-search"></i></li>
+              <li> <i class="bx bx-cart"></i></li>
+            </ul>
+        </div>
+        <div class="product">
+          <div class="product-overlay">
+            <a href="./pages/product.html" class="product-thum">
+                <img src="../images/product-8.jpg" alt="">
+            </a>
+          </div>
+          <div class="product-info">
+            <span>Men's cloths</span>
+            <a href="./pages/product.html">
+              viral t-shirt for men's
+            </a>
+            <h4>$39.99</h4>
+          </div>
+            <!-- hover icons  -->
+          
+            <ul class="icons">
+              <li> <i class="bx bx-heart"></i></li>
+              <li> <i class="bx bx-search"></i></li>
+              <li> <i class="bx bx-cart"></i></li>
+            </ul>
+        </div>
+        <div class="product">
+          <div class="product-overlay">
+            <a href="./pages/product.html" class="product-thum">
+                <img src="../images/product-4.jpg" alt="">
+            </a>
+          </div>
+          <div class="product-info">
+            <span>womem's cloths</span>
+            <a href="./pages/product.html">
+              Print on demand t-shirt
+            </a>
+            <h4>$19.19</h4>
+          </div>
+          <span class="discount">10%</span>
+            <!-- hover icons  -->
+          
+            <ul class="icons">
+              <li> <i class="bx bx-heart"></i></li>
+              <li> <i class="bx bx-search"></i></li>
+              <li> <i class="bx bx-cart"></i></li>
+            </ul>
+        </div>
+      </div>
+      <div class="pagination">
+        <a href="javascript:void(0)">1</a>
+        <a href="javascript:void(0)">2</a>
+        <a href="javascript:void(0)">3</a>
+        <a href="javascript:void(0)">4</a>
+        <a href="javascript:void(0)">...</a>
+        <a href="javascript:void(0)"><i class="bx bx-right-arrow-alt"></i></a>
+      </div>
+    </section>
+    
+  </body>
+  <script src="../js/index.js"></script>
+</html>

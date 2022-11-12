@@ -1,9 +1,22 @@
+from itertools import product
 from django.shortcuts import render
 from django.views.generic.list import ListView
-from .models import Product
+from .models import Category, Product, Image
 
 class ProductListView(ListView):
     model = Product
+    context_object_name = 'products'
+    template_name = "index.html"
 
-    def get_context_data(self, **kwargs):
-        context = b
+    def get_queryset(self):
+        products = Product.objects.all()
+        for product in products:
+            product.main_image = Image.objects.filter(product=product).first()
+
+        return products
+
+class CategoryListView(ListView):
+    model = Category
+    context_object_name = 'categories'
+    queryset = Category.objects.all()
+    template_name = 'pages/collection.html'

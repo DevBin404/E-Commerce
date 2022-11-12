@@ -2,6 +2,7 @@ from django.db import models
 
 class Category(models.Model):
     name = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='Categories', default='default/default.png')
 
     def __str__(self):
         return self.name
@@ -20,5 +21,5 @@ class Product(models.Model):
 
 class Image(models.Model):
     image = models.ImageField(upload_to='Products')
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True, related_name='image')
     

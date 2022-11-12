@@ -5,6 +5,7 @@ from .models import Product, Image, Category
 
 class ImageAdmin(admin.TabularInline):
     model = Image
+    
 
 class ProductAdmin(admin.ModelAdmin):
     inlines = [ImageAdmin]
