@@ -20,3 +20,16 @@ class CategoryListView(ListView):
     context_object_name = 'categories'
     queryset = Category.objects.all()
     template_name = 'pages/collection.html'
+
+class SelectedCategoryListView(ListView):
+    model = Product
+    context_object_name = 'products'
+    template_name = "index.html"
+
+    def get_queryset(self):
+        products = Product.objects.all()
+        if self.kwargs['pk']:
+            products = products.filter(category=self.kwargs['pk'])
+        for product in products:
+            product.main_image = Image.objects.filter(product=product).first()
+        return products
