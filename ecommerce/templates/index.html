@@ -113,8 +113,8 @@
       </div>
       
       <!-- products part -->
-      {% for product in products %}
       <div class="products-container">
+        {% for product in products %}
         <div class="product">
           <div class="product-overlay">
             <a href="./pages/product.html" class="product-thum">
@@ -136,8 +136,8 @@
               <li> <i class="bx bx-cart"></i></li>
             </ul>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </section>
     
   </body>
