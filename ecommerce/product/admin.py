@@ -8,8 +8,17 @@ class ImageAdmin(admin.TabularInline):
     
 
 class ProductAdmin(admin.ModelAdmin):
+
     inlines = [ImageAdmin]
+
+class CategoryAdmin(admin.ModelAdmin):
+    model = Category
+    # list_display = ('name', 'image' )
+    prepopulated_fields = {"slug": ("name",)}
+    # exclude = ['slug']
+
+
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Image)
-admin.site.register(Category)
+admin.site.register(Category, CategoryAdmin)

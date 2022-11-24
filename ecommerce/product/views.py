@@ -28,8 +28,8 @@ class SelectedCategoryListView(ListView):
 
     def get_queryset(self):
         products = Product.objects.all()
-        if self.kwargs['pk']:
-            products = products.filter(category=self.kwargs['pk'])
+        if self.kwargs['slug']:
+            products = products.filter(category__slug=self.kwargs['slug'])
         for product in products:
             product.main_image = Image.objects.filter(product=product).first()
         return products

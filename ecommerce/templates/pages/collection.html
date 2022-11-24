@@ -142,7 +142,7 @@
           {% for category in categories %}
           <div class="collection">
             <img class="scale" src="{{category.image.url}}" alt="">
-              <a href="{% url 'selected-category' pk=category.pk %}">
+              <a href="{{ category.get_absolute_url }}">
                 <div class="collection-info">
                   <h1 class="after">{{ category.name }}</h1>
                 </div>
