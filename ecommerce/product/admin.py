@@ -8,7 +8,8 @@ class ImageAdmin(admin.TabularInline):
     
 
 class ProductAdmin(admin.ModelAdmin):
-
+    model = Product
+    prepopulated_fields = {"slug": ("name",)}
     inlines = [ImageAdmin]
 
 class CategoryAdmin(admin.ModelAdmin):
